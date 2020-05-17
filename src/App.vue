@@ -1,10 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Tutorial App</a>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link to="/users" class="nav-link">Users</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/add" class="nav-link">Add</router-link>
+        </li>
+      </div>
+    </nav>
+    <div id="container">
+      <router-view />
     </div>
-    <router-view />
   </div>
 </template>
 
